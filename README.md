@@ -45,7 +45,7 @@ According to the Tidy Data article from Hadley Wickham, "In tidy data:
 2. Each observation forms a row.
 3. Each type of observational unit forms a table."
 One could think of two choises here for a tidy data set:
-- A wide table with 88 columns: "subject", "activity" and all the other measured variables, such as "tBodyAcc-mean()-X"
+- A wide table with 81 columns: "subject", "activity" and all the other measured variables, such as "tBodyAcc-mean()-X"
 - A narrow table with 4 columns: "subject", "activity", "variable" and "mean"
 One could argue that the "mean" is a variable, not an observation and should therefore be store on a column, not a row, as in the second option. The problem is that this would lead to all the other variables being stored on a single column, violating the second principle of a tidy data set. If we use the first approach, we could think of the mean as a type of observational unit, so it should be stored in a table, not a column.
 In conclusion, the "means.txt" has a tidy data set because each variable forms a column, each observation (or combination of subject and activity) forms a row and the only type of observational unit (the mean) forms a table.
